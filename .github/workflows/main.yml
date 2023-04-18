@@ -37,6 +37,6 @@ jobs:
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY_APP:$IMAGE_TAG .
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY_DB:$IMAGE_TAG .
-      
-        docker push $ECR_REGISTRY/$ECR_REPOSITOR_APP:$IMAGE_TAG
+
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY_APP:$IMAGE_TAG
         docker push $ECR_REGISTRY/$ECR_REPOSITORY_DB:$IMAGE_TAG
